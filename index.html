@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>hcal by hamidlab</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>hcal</h1>
+        <p>Simple javascript calendar</p>
+        <p class="view"><a href="https://github.com/hamidlab/hcal">View the Project on GitHub <small>hamidlab/hcal</small></a></p>
+        <ul>
+          <li><a href="https://github.com/hamidlab/hcal/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/hamidlab/hcal/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/hamidlab/hcal">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="hcal" class="anchor" href="#hcal"><span class="octicon octicon-link"></span></a>hcal</h1>
+
+<h4>
+<a name="simple-javascript-calendar" class="anchor" href="#simple-javascript-calendar"><span class="octicon octicon-link"></span></a>Simple javascript calendar</h4>
+
+<p>This Calendar class generates a calendar HTML, now you can append or insert this anywhere in the body.</p>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<pre><code>// HTML
+&lt;div id="hcal"&gt;&lt;/div&gt;
+
+// Javascript
+var cal = new hcal(); //For current month calendar
+or
+var cal = new hcal({month: 0, year: 2012}); //For January of 2012 calendar
+var calEle = document.getElementById('hcal');
+calEle.innerHTML = cal.generateHTML();
+
+// Next Month
+var nextCal = new hcal(cal.nextMonth());
+calEle.innerHTML = nextCal.generateHTML();
+
+// Previous Month
+var prevCal = new hcal(cal.prevMonth());
+calEle.innerHTML = prevCal.generateHTML();
+</code></pre>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/hamidlab">hamidlab</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
