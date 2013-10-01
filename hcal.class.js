@@ -1,4 +1,5 @@
 function hcal(dataDate) {
+    if(typeof dataDate != "object") dataDate = {};
     var month = dataDate.month;
     var year = dataDate.year;
 
